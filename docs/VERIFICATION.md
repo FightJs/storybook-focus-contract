@@ -55,3 +55,11 @@
 独立子agent首轮响应式6/10，发现375px打开态浮层超出29px；已用320px断言复现，再修正grid最小宽度与浮层宽度。修复后子agent独立测量375px浮层为x24/width327/right351，关闭该阻断。完整逐项评分与保留的首轮记录见 [UI-REVIEW.md](UI-REVIEW.md)，真实图在 [ui/](ui/)。此前11月17日原始CLI报告与截图保留作为历史工件。
 
 Hallmark渲染检查包含1280/1440/1920首屏与375/1440全页，before记录保留6/6测试hook、3/3原处理器、4/4原链接；最终检查结果以.hallmark记录为准。未做真实移动设备或屏幕阅读器审计，不宣称所有浏览器兼容。
+
+## 2026-11-18 GitHub Pages 发布
+
+公开仓库：[FightJs/storybook-focus-contract](https://github.com/FightJs/storybook-focus-contract)；[Pages 在线演示](https://fightjs.github.io/storybook-focus-contract/iframe.html?id=demo-popover--working&viewMode=story)。
+
+GitHub Actions [运行 44244839346](https://github.com/FightJs/storybook-focus-contract/actions/runs/44244839346) 对提交 `e546e3570e389d83f98018189d8f76c8964f09ae` 的类型检查、5 项单元/CLI 测试、4 项浏览器回归及部署成功。该次构建的 Playwright 测试包含两份独立导出包。此前一次 Linux CI 的 Vite 彩色输出使测试无法识别端口；已补解析回归并修复，未跳过失败测试。
+
+在本地模拟仓库子路径时，正常契约通过，错误契约在第5步失败，资源无 HTTP 错误。公网浏览器实际打开两份示例：正常示例 Esc 后实时焦点为 `trigger`，故意错误示例为 `document.body`。线上实时观察不等于运行了 Playwright，自动测试证据来自 CI 和本地执行。
