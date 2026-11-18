@@ -1,0 +1,32 @@
+/* Hallmark · shared tokens · theme: product clarity, user-requested Apple-inspired restraint · v2.0.0 */
+:root {
+  color-scheme: light;
+  --color-paper: oklch(100% 0 0);
+  --color-paper-2: oklch(97.2% 0.002 250);
+  --color-paper-3: oklch(94.5% 0.003 250);
+  --color-ink: oklch(23% 0.005 250);
+  --color-ink-2: oklch(41% 0.009 250);
+  --color-muted: oklch(48% 0.009 250);
+  --color-rule: oklch(88% 0.005 250);
+  --color-rule-2: oklch(69% 0.01 250);
+  --color-accent: oklch(48% 0.19 256);
+  --color-focus: oklch(48% 0.19 256);
+  --color-accent-soft: oklch(96% 0.02 256);
+  --color-ok: oklch(41% 0.1 155);
+  --color-ok-soft: oklch(96% 0.02 155);
+  --color-bad: oklch(44% 0.15 30);
+  --color-bad-soft: oklch(97% 0.015 30);
+  --color-transparent: transparent;
+  --color-dialog-shadow: oklch(23% 0.005 250 / 0.16);
+  --font-body: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-display: var(--font-body);
+  --font-outlier: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --text-sm: 0.875rem; --text-md: 1rem; --text-section: 1.25rem; --text-title: 1rem;
+  --display-weight: 600; --tracking-display: -0.025em;
+  --container: 1224px; --gutter: 40px;
+  --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px;
+  --radius-card: 16px; --radius-control: 8px;
+  --dur-micro: 140ms; --dur-short: 200ms; --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --space-4: 4px; --space-8: 8px; --space-12: 12px; --space-16: 16px; --space-20: 20px; --space-24: 24px; --space-28: 28px; --space-32: 32px; --space-36: 36px; --space-40: 40px; --space-56: 56px;
+  --z-modal: 400;
+}

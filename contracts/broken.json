@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "storyId": "demo-popover--broken",
+  "initialFocus": "trigger",
+  "steps": [
+    {
+      "action": "press",
+      "key": "Enter",
+      "expectFocus": "close"
+    },
+    {
+      "action": "wait",
+      "target": "panel",
+      "state": "visible",
+      "expectFocus": "close"
+    },
+    {
+      "action": "press",
+      "key": "Tab",
+      "expectFocus": "secondary"
+    },
+    {
+      "action": "press",
+      "key": "Shift+Tab",
+      "expectFocus": "close"
+    },
+    {
+      "action": "press",
+      "key": "Escape",
+      "expectFocus": "trigger"
+    },
+    {
+      "action": "wait",
+      "target": "panel",
+      "state": "hidden",
+      "expectFocus": "trigger"
+    },
+    {
+      "action": "click",
+      "target": "trigger",
+      "expectFocus": "close"
+    },
+    {
+      "action": "click",
+      "target": "close",
+      "expectFocus": "trigger"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+/* Hallmark · foundation · shape: app screen · v2.0.0 */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+html { scroll-padding-top: 24px; scrollbar-color: var(--color-rule-2) var(--color-paper); }
+body { margin: 0; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); font-size: var(--text-md); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+h1,h2,h3 { margin: 0; color: var(--color-ink); font-family: var(--font-display); font-weight: 600; letter-spacing: var(--tracking-display); text-wrap: balance; overflow-wrap: break-word; min-width: 0; }
+h2 { font-size: var(--text-section); } h3 { font-size: var(--text-title); }
+p { margin: 0; max-width: 72ch; text-wrap: pretty; }
+a { color: inherit; text-underline-offset: 4px; }
+button { font: inherit; }
+code,kbd { font-family: var(--font-outlier); }
+:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 4px; }
+::selection { background: var(--color-accent-soft); color: var(--color-ink); }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }

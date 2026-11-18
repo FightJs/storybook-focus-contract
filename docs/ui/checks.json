@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "width": 320,
+      "keyboard": "passed",
+      "dialog": "within viewport",
+      "overflow": false,
+      "liveFocus": "truthful"
+    },
+    {
+      "width": 375,
+      "keyboard": "passed",
+      "dialog": "within viewport",
+      "overflow": false,
+      "liveFocus": "truthful"
+    },
+    {
+      "width": 768,
+      "keyboard": "passed",
+      "dialog": "within viewport",
+      "overflow": false,
+      "liveFocus": "truthful"
+    },
+    {
+      "width": 1280,
+      "keyboard": "passed",
+      "dialog": "within viewport",
+      "overflow": false,
+      "liveFocus": "truthful"
+    },
+    {
+      "width": 1440,
+      "keyboard": "passed",
+      "dialog": "within viewport",
+      "overflow": false,
+      "liveFocus": "truthful"
+    },
+    {
+      "width": 1920,
+      "keyboard": "passed",
+      "dialog": "within viewport",
+      "overflow": false,
+      "liveFocus": "truthful"
+    }
+  ],
+  "contrast": [
+    {
+      "text": "--color-muted",
+      "bg": "--color-paper",
+      "ratio": 6.529883636440324
+    },
+    {
+      "text": "--color-muted",
+      "bg": "--color-paper-2",
+      "ratio": 6.0348197060240585
+    },
+    {
+      "text": "--color-accent",
+      "bg": "--color-accent-soft",
+      "ratio": 5.909082587419993
+    },
+    {
+      "text": "--color-ink",
+      "bg": "--color-paper",
+      "ratio": 16.906387744607457
+    }
+  ]
+}

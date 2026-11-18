@@ -1,0 +1,238 @@
+{
+  "status": "passed",
+  "storyId": "demo-popover--working",
+  "url": "http://localhost:6006/iframe.html?id=demo-popover--working&viewMode=story",
+  "startedAt": "2026-11-17T15:03:16.975Z",
+  "versions": {
+    "tool": "0.1.0",
+    "node": "v22.23.1",
+    "playwright": "1.65.1",
+    "chromium": "159.0.8154.6"
+  },
+  "contract": {
+    "version": 1,
+    "storyId": "demo-popover--working",
+    "initialFocus": "trigger",
+    "steps": [
+      {
+        "action": "press",
+        "key": "Enter",
+        "expectFocus": "close"
+      },
+      {
+        "action": "wait",
+        "target": "panel",
+        "state": "visible",
+        "expectFocus": "close"
+      },
+      {
+        "action": "press",
+        "key": "Tab",
+        "expectFocus": "secondary"
+      },
+      {
+        "action": "press",
+        "key": "Shift+Tab",
+        "expectFocus": "close"
+      },
+      {
+        "action": "press",
+        "key": "Escape",
+        "expectFocus": "trigger"
+      },
+      {
+        "action": "wait",
+        "target": "panel",
+        "state": "hidden",
+        "expectFocus": "trigger"
+      },
+      {
+        "action": "click",
+        "target": "trigger",
+        "expectFocus": "close"
+      },
+      {
+        "action": "click",
+        "target": "close",
+        "expectFocus": "trigger"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "number": 1,
+      "step": {
+        "action": "press",
+        "key": "Enter",
+        "expectFocus": "close"
+      },
+      "expected": "close",
+      "actual": {
+        "tag": "button",
+        "testId": "close",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 2,
+      "step": {
+        "action": "wait",
+        "target": "panel",
+        "state": "visible",
+        "expectFocus": "close"
+      },
+      "expected": "close",
+      "actual": {
+        "tag": "button",
+        "testId": "close",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 3,
+      "step": {
+        "action": "press",
+        "key": "Tab",
+        "expectFocus": "secondary"
+      },
+      "expected": "secondary",
+      "actual": {
+        "tag": "button",
+        "testId": "secondary",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 4,
+      "step": {
+        "action": "press",
+        "key": "Shift+Tab",
+        "expectFocus": "close"
+      },
+      "expected": "close",
+      "actual": {
+        "tag": "button",
+        "testId": "close",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 5,
+      "step": {
+        "action": "press",
+        "key": "Escape",
+        "expectFocus": "trigger"
+      },
+      "expected": "trigger",
+      "actual": {
+        "tag": "button",
+        "testId": "trigger",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 6,
+      "step": {
+        "action": "wait",
+        "target": "panel",
+        "state": "hidden",
+        "expectFocus": "trigger"
+      },
+      "expected": "trigger",
+      "actual": {
+        "tag": "button",
+        "testId": "trigger",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 7,
+      "step": {
+        "action": "click",
+        "target": "trigger",
+        "expectFocus": "close"
+      },
+      "expected": "close",
+      "actual": {
+        "tag": "button",
+        "testId": "close",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 8,
+      "step": {
+        "action": "click",
+        "target": "close",
+        "expectFocus": "trigger"
+      },
+      "expected": "trigger",
+      "actual": {
+        "tag": "button",
+        "testId": "trigger",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    }
+  ],
+  "focusHistory": [
+    {
+      "tag": "button",
+      "testId": "trigger",
+      "id": null,
+      "role": null
+    },
+    {
+      "tag": "button",
+      "testId": "close",
+      "id": null,
+      "role": null
+    },
+    {
+      "tag": "button",
+      "testId": "secondary",
+      "id": null,
+      "role": null
+    },
+    {
+      "tag": "button",
+      "testId": "close",
+      "id": null,
+      "role": null
+    },
+    {
+      "tag": "button",
+      "testId": "trigger",
+      "id": null,
+      "role": null
+    },
+    {
+      "tag": "button",
+      "testId": "close",
+      "id": null,
+      "role": null
+    },
+    {
+      "tag": "button",
+      "testId": "trigger",
+      "id": null,
+      "role": null
+    }
+  ],
+  "firstFailure": null
+}

@@ -1,0 +1,174 @@
+{
+  "status": "failed",
+  "storyId": "demo-popover--broken",
+  "url": "http://localhost:6006/iframe.html?id=demo-popover--broken&viewMode=story",
+  "startedAt": "2026-11-17T15:03:18.591Z",
+  "versions": {
+    "tool": "0.1.0",
+    "node": "v22.23.1",
+    "playwright": "1.65.1",
+    "chromium": "159.0.8154.6"
+  },
+  "contract": {
+    "version": 1,
+    "storyId": "demo-popover--broken",
+    "initialFocus": "trigger",
+    "steps": [
+      {
+        "action": "press",
+        "key": "Enter",
+        "expectFocus": "close"
+      },
+      {
+        "action": "wait",
+        "target": "panel",
+        "state": "visible",
+        "expectFocus": "close"
+      },
+      {
+        "action": "press",
+        "key": "Tab",
+        "expectFocus": "secondary"
+      },
+      {
+        "action": "press",
+        "key": "Shift+Tab",
+        "expectFocus": "close"
+      },
+      {
+        "action": "press",
+        "key": "Escape",
+        "expectFocus": "trigger"
+      },
+      {
+        "action": "wait",
+        "target": "panel",
+        "state": "hidden",
+        "expectFocus": "trigger"
+      },
+      {
+        "action": "click",
+        "target": "trigger",
+        "expectFocus": "close"
+      },
+      {
+        "action": "click",
+        "target": "close",
+        "expectFocus": "trigger"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "number": 1,
+      "step": {
+        "action": "press",
+        "key": "Enter",
+        "expectFocus": "close"
+      },
+      "expected": "close",
+      "actual": {
+        "tag": "button",
+        "testId": "close",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 2,
+      "step": {
+        "action": "wait",
+        "target": "panel",
+        "state": "visible",
+        "expectFocus": "close"
+      },
+      "expected": "close",
+      "actual": {
+        "tag": "button",
+        "testId": "close",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 3,
+      "step": {
+        "action": "press",
+        "key": "Tab",
+        "expectFocus": "secondary"
+      },
+      "expected": "secondary",
+      "actual": {
+        "tag": "button",
+        "testId": "secondary",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 4,
+      "step": {
+        "action": "press",
+        "key": "Shift+Tab",
+        "expectFocus": "close"
+      },
+      "expected": "close",
+      "actual": {
+        "tag": "button",
+        "testId": "close",
+        "id": null,
+        "role": null
+      },
+      "status": "passed"
+    },
+    {
+      "number": 5,
+      "step": {
+        "action": "press",
+        "key": "Escape",
+        "expectFocus": "trigger"
+      },
+      "expected": "trigger",
+      "actual": {
+        "tag": "body",
+        "testId": null,
+        "id": null,
+        "role": null
+      },
+      "status": "failed",
+      "error": "expect(locator).toBeFocused() failed\n\nLocator:  getByTestId('trigger')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeFocused\" getByTestId('trigger') with timeout 5000ms\n  - waiting for getByTestId('trigger')\n    14 × locator resolved to <button data-testid=\"trigger\" aria-expanded=\"false\" aria-haspopup=\"dialog\">打开设置</button>\n       - unexpected value \"inactive\"\n"
+    }
+  ],
+  "focusHistory": [
+    {
+      "tag": "button",
+      "testId": "trigger",
+      "id": null,
+      "role": null
+    },
+    {
+      "tag": "button",
+      "testId": "close",
+      "id": null,
+      "role": null
+    },
+    {
+      "tag": "button",
+      "testId": "secondary",
+      "id": null,
+      "role": null
+    },
+    {
+      "tag": "button",
+      "testId": "close",
+      "id": null,
+      "role": null
+    }
+  ],
+  "firstFailure": 5,
+  "error": "expect(locator).toBeFocused() failed\n\nLocator:  getByTestId('trigger')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeFocused\" getByTestId('trigger') with timeout 5000ms\n  - waiting for getByTestId('trigger')\n    14 × locator resolved to <button data-testid=\"trigger\" aria-expanded=\"false\" aria-haspopup=\"dialog\">打开设置</button>\n       - unexpected value \"inactive\"\n",
+  "screenshot": "failure.png"
+}
