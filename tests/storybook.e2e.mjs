@@ -7,6 +7,7 @@ import { tmpdir } from 'node:os';
 import { chromium } from '@playwright/test';
 import { executeContract } from '../dist/runner.js';
 import { exportContract } from '../dist/export.js';
+import { localViteUrl } from './vite-output.mjs';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function command(file,args,cwd,env={}) {
  return await new Promise((resolve,reject)=>{
@@ -23,7 +24,7 @@ test('Storybook fixtures and independently installed exports agree with CLI resu
  let browser;
  try {
   let baseUrl;
-  for(let i=0;i<200;i++){baseUrl=output.match(/http:\/\/127\.0\.0\.1:\d+\//)?.[0];if(baseUrl)break;await sleep(100)}
+  for(let i=0;i<200;i++){baseUrl=localViteUrl(output);if(baseUrl)break;await sleep(100)}
   assert.ok(baseUrl,output);
   browser=await chromium.launch();
   for(const mode of ['working','broken']){
